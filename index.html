@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style>
+        @font-face {
+            font-family: Agrandir;
+            src:url("Agrandir-Regular.otf");
+        }
+        @font-face {
+            font-family: AgrandirHeavy;
+            src:url("Agrandir-Heavy.otf");
+        }
+        body { margin: 0; padding: 0; }
+        html { height: 100%; cursor: default; }
+        body {
+            font-family: "AgrandirHeavy", sans-serif; /* Default font */
+            width: 100%; height: 100%;
+            text-align: center;
+            display: table;
+            opacity: 1;
+        }
+        h2 {
+            font-family: "Agrandir", sans-serif; /* Default font */
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        img {
+            width: 25%; /* Image width */
+            border: 0; /* For IE */
+            /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
+            /* When changing logo, change this also */
+            aspect-ratio: 50 / 50;
+        }
+        #main {
+            vertical-align: middle;
+            display: table-cell;
+            background-image: url('banner.webp');
+        }
+
+        @media screen and (max-width:600px) {
+            img {
+                width: 60%;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            h2 {
+                margin: 1.1em;
+                font-size: 1.1em;
+            }
+            #progress {
+                width: 80%; /* Bar width */
+            }
+        }
+    </style>
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div id="main">
+        <img src="logo.png" alt="Logo Image">
+        <h1>We will be back soon!</h1>
+        <h2>Our website is currently undergoing maintenance. </h2>
+        <h3><a href="https://www.instagram.com/augustroseshopca/">Check us out on Instagram! ❤️</a></h3>
+    </div>
+</body>
+</html>
